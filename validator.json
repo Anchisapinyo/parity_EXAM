@@ -1,0 +1,131 @@
+{
+    "name": "Validator-set-tutorial",
+    "engine": {
+        "authorityRound": {
+            "params": {
+                "stepDuration": "2",
+                "validators": {
+                    "multi": {
+                        "0": {
+                            "list": [
+                                "0xc08c50f55c952dd08050c280076fba613b3e4db9",
+                                "0x4c3dbfa8b8e55c2a0015f7e8e7693ab811049c4c",
+                                "0xdebf91cfb4ac90d9de25a285c054b83ab06d5da0",
+                                "0xe68f3c3c83051697ecd986aeb404f46cb322d45c"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "params": {
+        "gasLimitBoundDivisor": "0x400",
+        "maximumExtraDataSize": "0x20",
+        "minGasLimit": "0x7A1200",
+        "networkID": "0x2323",
+        "eip155Transition": 0,
+        "validateChainIdTransition": 0,
+        "eip211Transition": 0,
+        "eip214Transition": 0,
+        "eip658Transition": 0,
+        "eip150Transition": "0x0",
+        "eip160Transition": "0x0",
+        "eip161abcTransition": "0x0",
+        "eip161dTransition": "0x0",
+        "eip98Transition": "0x7fffffffffffff",
+        "maxCodeSize": 24576,
+        "maxCodeSizeTransition": "0x0"
+    },
+    "genesis": {
+        "seal": {
+            "authorityRound": {
+                "step": "0x0",
+                "signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+            }
+        },
+        "difficulty": "0x20000",
+        "gasLimit": "0x7A1200"
+    },
+    "accounts": {
+        "0xc08c50f55c952dd08050c280076fba613b3e4db9": {
+            "balance": "10000000000000000000000",
+            "builtin": {
+                "name": "ecrecover",
+                "pricing": {
+                    "linear": {
+                        "base": 3000,
+                        "word": 200
+                    }
+                }
+            }
+        },
+        "0x5bdbb8E7d7A1319B1Ef80442b4c2C9C6c0A79578": {
+            "balance": "20000000000000000000"
+        },
+        "0xCaf5Ee5e872619F8eEB9a571794a0683b5CE8F2f": {
+            "balance": "20000000000000000000"
+        },
+        "0x4c3dbfa8b8e55c2a0015f7e8e7693ab811049c4c": {
+            "balance": "10000000000000000000000",
+            "builtin": {
+                "name": "ripemd160",
+                "pricing": {
+                    "linear": {
+                        "base": 3000,
+                        "word": 200
+                    }
+                }
+            }
+        },
+        "0xdebf91cfb4ac90d9de25a285c054b83ab06d5da0": {
+            "balance": "1000000000000000000000000",
+            "builtin": {
+                "name": "identity",
+                "pricing": {
+                    "linear": {
+                        "base": 3000,
+                        "word": 200
+                    }
+                }
+            }
+        },
+        "0xe68f3c3c83051697ecd986aeb404f46cb322d45c": {
+            "balance": "1000000000000000000000000",
+            "builtin": {
+                "name": "alt_bn128_add",
+                "activate_at": 0,
+                "pricing": {
+                    "linear": {
+                        "base": 500,
+                        "word": 200
+                    }
+                }
+            }
+        },
+        "0x0000000000000000000000000000000000000007": {
+            "builtin": {
+                "name": "alt_bn128_mul",
+                "activate_at": 0,
+                "pricing": {
+                    "linear": {
+                        "base": 40000,
+                        "word": 0
+                    }
+                }
+            }
+        },
+        "0x0000000000000000000000000000000000000008": {
+            "builtin": {
+                "name": "alt_bn128_pairing",
+                "activate_at": 0,
+                "pricing": {
+                    "alt_bn128_pairing": {
+                        "base": 100000,
+                        "pair": 80000
+                    }
+                }
+            }
+        }
+    }
+}
