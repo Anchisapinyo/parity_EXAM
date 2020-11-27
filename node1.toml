@@ -1,6 +1,6 @@
 [parity]
 chain = "validator.json"  
-base_path = "/paritybase"
+base_path = "/paritybase1"
 
 [network]
 port = 30301
@@ -23,11 +23,11 @@ port = 8456
 disable = true
 
 [account]
-unlock = ["0xdebf91cfb4ac90d9de25a285c054b83ab06d5da0", "0xCaf5Ee5e872619F8eEB9a571794a0683b5CE8F2f"]
+unlock = []
 password = ["./password.file"]
 
 [mining]
-engine_signer = "0xdebf91cfb4ac90d9de25a285c054b83ab06d5da0"
+engine_signer = ""
 reseal_on_txs = "none" 
 usd_per_tx = "0" 
 force_sealing = true
