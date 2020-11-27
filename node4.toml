@@ -1,6 +1,6 @@
 [parity]
 chain = "validator.json"
-base_path = "/paritybase1"
+base_path = "/paritybase4"
 
 [network]
 port = 30302
@@ -19,7 +19,7 @@ port = 8455
 disable = true
 
 [account]
-unlock = ["0x602d4b1647fee2601f95eef8836d1e5b540be7c1"]
+unlock = [""]
 password = ["./password.file"]
 
 
