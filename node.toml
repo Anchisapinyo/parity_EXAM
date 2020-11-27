@@ -1,0 +1,37 @@
+[parity]
+chain = "validator.json"  
+base_path = "/paritybase1"
+
+[network]
+port = 30301
+bootnodes = ["enode://3cade77744753eb0b432aaed1b2da8db64643f8b829b3623e57e8f28f1d83f30ecb7414b2295684eb56c9560d22804fd6a9560c65a0977f754831cc66795af3e@127.0.0.1:30305",
+"enode://1d74b1d5c25d7ca290da740b00f2740931a9b11227b8db11066c92592d236cf3fb2091875eacf4eedb5cf3a87f06a5b7140b4f3e56ab97f610d8465789fe0370@127.0.0.1:30306",
+"enode://b42c1c4d667cdb94c46d52f5308b17691ea7468aecdef3cfe916222e1e0690601f5d1759987663bb4564dabb91f9c9e40193d6a293777c57d8903e123c5bdc43@127.0.0.1:30302"]
+
+[rpc]
+port = 8542
+apis = ["web3", "eth", "pubsub", "net", "parity", "private", "parity_pubsub", "traces", "rpc", "personal", "parity_accounts", "parity_set", "signer", "secretstore"]
+cors=["all"] 
+interface="all"
+hosts=["all"]
+
+[websockets]
+disable = false
+port = 8456
+
+[ipc]
+disable = true
+
+[account]
+unlock = []
+password = ["./password.file"]
+
+[mining]
+engine_signer = ""
+reseal_on_txs = "none" 
+usd_per_tx = "0" 
+force_sealing = true
+
+
+[misc]
+logging  = "own_tx,shutdown=trace"
